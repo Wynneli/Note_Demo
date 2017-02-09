@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//Junit/com/wynne/proxy/CglibProxyFactoryTest.java=UTF-8
+encoding//Junit/com/wynne/proxy/jdkProxyTest.java=UTF-8
+encoding//Junit/com/wynne/proxy/staticProxyTest.java=UTF-8
+encoding//src/com/wynne/io/AddFileNameLength.java=UTF-8
+encoding//src/com/wynne/proxy/BookingService.java=UTF-8
+encoding//src/com/wynne/proxy/BookingServiceImpl.java=UTF-8
+encoding//src/com/wynne/proxy/CglibProxyFactory.java=UTF-8
+encoding//src/com/wynne/proxy/Count.java=UTF-8
+encoding//src/com/wynne/proxy/CountImpl.java=UTF-8
+encoding//src/com/wynne/proxy/CustomerService.java=UTF-8
+encoding//src/com/wynne/proxy/jdkProxy.java=UTF-8
+encoding//src/com/wynne/proxy/staticProxy.java=UTF-8
+encoding//src/com/wynne/util/MapInterator.java=UTF-8
+encoding//src/com/wynne/util/SetIterator.java=UTF-8
+encoding//src/com/wynne/util/listIterator.java=UTF-8
