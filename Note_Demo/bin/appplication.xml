@@ -1,0 +1,30 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       
+        <!-- 通过 默认无参数构造器 实例化Bean对象 -->
+       <bean id="UserDao" class="com.wynne.Dao.UserDaoImpl"/>   
+           
+       <bean id="BookingService" class="com.wynne.Service.BookingServiceimpl">
+       <!-- 把UserDao注入到Service中 -->
+          <property name="UserDao" ref="UserDao"/>
+       </bean>
+       
+       <!-- 通过静态方法实例化Bean对象 -->
+       <bean id="BookingServiceFactory" class="com.wynne.Factory.BookingServiceFactory" factory-method="init">
+          <!-- 把UserDao注入到Service中 -->
+          <property name="UserDao" ref="UserDao"/>
+       </bean>
+       
+       <!-- 使用实例工厂方法实例化对象 -->
+       <bean id="BookingServiceFactory2" class="com.wynne.Factory.BookingServiceFactory2"/>
+       <bean id="BookingService2" factory-bean="BookingServiceFactory2" factory-method="init">
+         <!-- 把UserDao注入到Service中 -->
+          <property name="UserDao" ref="UserDao"/>
+       </bean>
+       
+</beans>
