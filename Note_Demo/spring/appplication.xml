@@ -27,4 +27,8 @@
           <property name="UserDao" ref="UserDao"/>
        </bean>
        
+       <!--  单实例配置，默认是单实例的-->
+       <bean id="SingletonBean" class="com.wynne.scope.singletonBean"/>
+       <!--  多实例配置-->
+        <bean id="protoType" class="com.wynne.scope.protoTypeBean" scope="prototype"/>
 </beans>
